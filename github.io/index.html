@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>djreset - Django Project Reset Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>djreset - Django Project Reset Tool</h1>
+
+    <p><strong>djreset</strong> is a command-line interface (CLI) tool designed to help developers quickly reset their Django projects. It automates the process of:</p>
+    
+    <ul>
+        <li>Deleting migration files (except <code>__init__.py</code> and <code>__pycache__</code>).</li>
+        <li>Removing SQLite database files.</li>
+        <li>Deleting the <code>media</code> directory.</li>
+        <li>Re-running <code>makemigrations</code> and <code>migrate</code> commands.</li>
+        <li>Creating a superuser with default credentials (<code>username=admin</code> and <code>password=admin</code>).</li>
+        <li>Optionally, starting the Django development server.</li>
+    </ul>
+
+    <p>This tool is perfect for quickly setting up a fresh environment or for resolving migration and database issues in Django projects.</p>
+
+    <h2>Installation</h2>
+    <p>To install and use <strong>djreset</strong>, run:</p>
+    
+    <pre><code>pip install .</code></pre>
+
+    <h2>Usage</h2>
+    <p>Run the following command to reset your Django project:</p>
+
+    <pre><code>djreset</code></pre>
+
+    <p>For additional help and options:</p>
+
+    <pre><code>djreset --help</code></pre>
+
+    <p>Use <code>-f</code> or <code>--force</code> to skip confirmation prompts and force all deletions.</p>
+
+</body>
+</html>
